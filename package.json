@@ -1,9 +1,12 @@
 {
   "name": "semver-existing-max",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Find existing maximum version of dependency according to semver and semver-max",
   "main": "index.js",
-  "repository": "klintonc/semver-existing-max",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klintonc/semver-existing-max.git"
+  },
   "homepage": "https://github.com/klintonc/semver-existing-max",
   "author": "Klinton C. <klinton.chh@gmail.com>",
   "license": "MIT",
