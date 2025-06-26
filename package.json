@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Find existing maximum version of dependency according to semver and semver-max",
   "main": "index.js",
-  "repository": "KlintonICT/semver-existing-max",
-  "homepage": "https://github.com/KlintonICT/semver-existing-max",
-  "author": "Klinton <chhunklinton91@gmail.com>",
+  "repository": "klintonc/semver-existing-max",
+  "homepage": "https://github.com/klintonc/semver-existing-max",
+  "author": "Klinton C. <klinton.chh@gmail.com>",
   "license": "MIT",
   "scripts": {
     "test": "jest --coverage"
@@ -14,7 +14,7 @@
     "index.js"
   ],
   "bugs": {
-    "url": "https://github.com/KlintonICT/semver-existing-max/issues"
+    "url": "https://github.com/klintonc/semver-existing-max/issues"
   },
   "keywords": [
     "semver",
