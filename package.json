@@ -1,6 +1,6 @@
 {
   "name": "semver-existing-max",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Find existing maximum version of dependency according to semver and semver-max",
   "main": "index.js",
   "repository": "klintonc/semver-existing-max",
