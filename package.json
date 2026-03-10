@@ -3,9 +3,18 @@
   "version": "1.0.3",
   "type": "module",
   "description": "Find existing maximum version of dependency according to semver",
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/klintonc/semver-existing-max.git"
@@ -20,9 +29,6 @@
     "typecheck": "bunx tsc --noEmit",
     "release": "bun run build && bun version patch && git push --follow-tags && bun publish"
   },
-  "files": [
-    "dist"
-  ],
   "bugs": {
     "url": "https://github.com/klintonc/semver-existing-max/issues"
   },
