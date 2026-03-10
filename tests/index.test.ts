@@ -1,6 +1,6 @@
-'use strict';
+import { expect, test } from "bun:test";
 
-const semverExistingMax = require('..');
+import semverExistingMax from '../src';
 
 test('Existing max version', async () => {
   const result = await semverExistingMax('semver', '~1.0.5');

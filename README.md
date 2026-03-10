@@ -11,27 +11,31 @@ or
 ```
 $ yarn add semver-existing-max
 ```
+or
+```
+$ bun add semver-existing-max
+```
 
 ## Usage
 
-Passing dependency name in the argument:
+Passing a package name — fetches versions from the npm registry:
 
 ```js
-const semverExistingMax = require('semver-existing-max');
+import semverExistingMax from 'semver-existing-max';
 
 const result = await semverExistingMax('semver', '~1.0.5');
-// => result = 1.0.14
+// => '1.0.7' (or the current max matching that range on the registry)
 ```
 
-Or passing version list in the argument:
+Or passing a version list directly:
 
 ```js
-const semverExistingMax = require('semver-existing-max');
+import semverExistingMax from 'semver-existing-max';
 
 const versionList = ['1.0.4', '1.0.5', '1.0.6', '1.0.7', '1.1.2'];
 
 const result = await semverExistingMax(versionList, '~1.0.5');
-// => result = 1.0.7
+// => '1.0.7'
 ```
 
 ## API
@@ -44,7 +48,6 @@ Return the maximum version of the given version range that exists in the depende
 ## Related
 
 - [semver](https://github.com/npm/node-semver)
-- [semver-max](https://github.com/eush77/semver-max)
 
 ## License
 
