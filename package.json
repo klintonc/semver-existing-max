@@ -1,6 +1,6 @@
 {
   "name": "semver-existing-max",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "description": "Find existing maximum version of dependency according to semver",
   "main": "./dist/index.cjs",
